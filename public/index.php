@@ -1,3 +1,4 @@
+
 <?php
 // Tableau contenant la liste de courses
 // Chaque élément est un tableau associatif avec :
@@ -48,4 +49,3 @@ $liste = array_reverse($liste);
 
 </body>
 </html>
-
