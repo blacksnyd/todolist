@@ -66,13 +66,13 @@ h2 {
    padding: 2% 3% ;
    margin: 1%;
    width: 85%;
-    border: none;
+   border: none;
     border-radius: 15px;
     font-size: 14px;
 
 }
 .taskInput select {
-    padding:2% 3%;
+    padding:2% 1%;
     margin: 1%;
     width: 30%;
     border: solid rgb(216, 213, 213);
@@ -94,23 +94,24 @@ font-size: 20px;
 border-radius: 25px;
 margin: 2% 0 1%;
 border: none;
-
-
 }
 
  .priorityRed {
     background-color: rgba(236, 6, 6, 0.904);
     color: white;
+    text-align: center;
  }
  
-  .priorityBlue {
-    background-color: rgba(9, 105, 230, 0.82);
-    color: white;
+  .priorityWhite {
+    background-color: white;
+    color: black;
+    text-align: center;
  }
 
    .priorityGreen {
     background-color: rgba(11, 236, 41, 0.973);
     color: white;
+    text-align: center;
  }
 
 
