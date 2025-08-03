@@ -26,7 +26,16 @@
     }
 
     if(empty($errors)) {
-
+      $tasks_sanitized = [];
+      foreach ($tasks as $task) {
+          $tasks_sanitized[] = htmlspecialchars(trim($task));
+      }
+      $list = [
+        "list_name" => htmlspecialchars(trim($list_name)),
+        "tasks" => $tasks_sanitized,
+        "priority" => htmlspecialchars(trim($priority))
+      ];
+      $_SESSION["lists"][] = $list;
     }
   }
 ?>
@@ -44,7 +53,6 @@
   <header>
     <h1>Mes ToDoLists</h1>
   </header>
-
   <form class="formContainer" action="" method="POST">
     <?php
       if(!empty($errors)) {
