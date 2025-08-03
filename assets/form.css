@@ -4,6 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+
+    color: black;
+    text-align: center;
+    padding:5px;
+}
+
 
 .formContainer {
     display: flex;
@@ -97,9 +104,15 @@ border: none;
     color: white;
  }
  
+
   .priorityWhite {
     background-color:white;
     color: black;
+    
+  .priorityBlue {
+    background-color: rgba(9, 105, 230, 0.82);
+    color: white;
+
  }
 
    .priorityGreen {
@@ -125,5 +138,4 @@ margin : 0;
   
 }
 
-     
-}
+

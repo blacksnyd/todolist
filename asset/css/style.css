@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    padding: 2%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    padding-bottom: 20px;
+}
+
+/* Chaque section = une liste  */
+section {
+    width: 80%;
+    margin: 3% auto;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+/* Couleurs selon priorité */
+.priorite-1 { background-color: rgba(255, 25, 0, 0.815); }
+.priorite-2 { background-color: rgba(243, 157, 18, 0.781); }
+.priorite-3 { background-color: rgba(39, 174, 95, 0.815); }
+
+
+.liste-courses {
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+/* Style d'un élément */
+.liste-courses li {
+    padding: 15px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    background-color: #BEC4E6;
+    color: white;
+    font-weight: bold;
+}
+
+
