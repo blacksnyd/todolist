@@ -17,9 +17,14 @@
     }elseif(count($filter) > 4) {
       $errors[] = "4 taches maximum par liste";
     }
-    if(empty($priority) || $priority == "priority") {
+    if(empty($priority) || $priority < 1) {
       $errors[] = "Le type de priorité est obligatoire";
+    } elseif (!is_numeric($priority) || $priority > 3) {
+      $errors[] = "Priorité invalide.";
     }
+
+
+
 
     if(!isset($_SESSION["lists"])) {
       $_SESSION["lists"] = [];
@@ -38,6 +43,7 @@
       $_SESSION["lists"][] = $list;
     }
   }
+
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +63,7 @@
     <?php
       if(!empty($errors)) {
         foreach ($errors as $error) {
-          echo $error;
+          echo $error."<br>";
         }
       }
     ?>
@@ -116,9 +122,9 @@
       </div>
       <div class="taskInput">
         <select name="priority" id="fourthNewTask">
-          <option value="priority">Priorité</option>
-          <option value="urgent" class="priorityRed">urgent</option>
-          <option value="normal" class="priorityBlue">normal</option>
+          <option value="0">Priorité</option>
+          <option value="1" class="priorityRed">urgent</option>
+          <option value="2" class="priorityBlue">normal</option>
         </select>
       </div>
     </div>
