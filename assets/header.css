@@ -4,9 +4,71 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+header {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(9, 105, 230, 0.82);
+    color: white;
+}
 
-    color: black;
+h1 {
     text-align: center;
     padding:5px;
+    margin: 3% 10%;
+    width: 40%;
+}
+
+nav {
+ margin-right: 10%;
+ width : 60%
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+li {
+    list-style: none;
+    margin: 0 5% 0 3%;
+    
+}
+.createList {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: solid white;
+    border-radius: 25px;
+  
+}
+.myLists {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border: solid white;
+    border-radius: 25px;
+  
+}
+
+@media (max-width: 850px) {
+header {
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    
+    margin: ;
+    width: 100%;
+}
+
+nav {
+ margin-right: 0%;
+ width : 100%;
+ padding: 5%;
+     
 }
