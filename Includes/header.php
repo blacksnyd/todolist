@@ -8,15 +8,15 @@
 </head>
 <body>
 <Header>
-    <h1> Mes ToDoLists<h1>
+    <h1> Mes ToDoLists</h1>
 
      <nav>
         <ul>
             <li>
-                <a href="">Créer une liste</a>
+                <a href="../public/add.php" class="createList">Créer une liste</a>
             </li>
             <li>
-                <a href="">Mes listes</a>
+                <a href="../public/index.php" class="myLists">Mes listes</a>
             </li>
         </ul>
      </nav>
